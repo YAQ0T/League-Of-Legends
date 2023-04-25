@@ -1,23 +1,36 @@
-<form action="/upload" method="POST" enctype="multipart/form-data">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" />
-  <br /><br />
-  <label for="id">ID:</label>
-  <input type="number" id="id" name="id" />
-  <br /><br />
-  <label for="id">Age:</label>
-  <input type="number" id="age" name="age" />
-  <br /><br />
-  <label for="description">Description:</label>
-  <textarea id="description" name="description"></textarea>
-  <br /><br />
-  <label for="titlePhoto">Link For User Image:</label>
-  <input type="text" id="titlePhoto" name="titlePhoto" />
-  <br /><br />
-  <label for="bigPhoto">
-    Link For Big Image:</label>
-  <input type="text" id="bigPhoto" name="bigPhoto" />
-  <br /><br />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/addUser.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dev class="main">
 
-  <input type="submit" value="Upload" />
-</form>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <p>Name:</p>
+        <input type="text" id="name" name="name" />
+
+        <p>ID:</p>
+        <input type="number" id="id" name="id" />
+
+        <p>Age:</p>
+        <input type="number" id="age" name="age" />
+
+        <p>Description:</p>
+        <input type="text" id="description" name="description"></textarea>
+
+        <p>Link For User Image:</p>
+        <input type="text" id="titlePhoto" name="titlePhoto" />
+
+        <p>
+          Link For Big Image:</p>
+        <input type="text" id="bigPhoto" name="bigPhoto" />
+
+        <input class="submit" type="submit" value="Upload" />
+      </form>
+    </dev>
+  </body>
+</html>

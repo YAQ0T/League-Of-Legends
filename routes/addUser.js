@@ -11,7 +11,6 @@ router.get("/", function (req, res, next) {
 
 router.post("/Upload", upload.none(), (req, res) => {
   data = req.body;
-  console.log(data);
   let newUser = new user({
     id: data.id,
     name: data.name,
@@ -24,7 +23,8 @@ router.post("/Upload", upload.none(), (req, res) => {
     .save()
     .then(() => {
       console.log("success");
-      res.send(200, "success");
+      res.render("addUser.hbs");
+      res.redirect(`/userPage/${data.id}`);
     })
     .catch((err) => {
       console.log(err);
