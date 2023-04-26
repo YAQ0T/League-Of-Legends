@@ -9,14 +9,14 @@ router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 const user = require("../mongo");
 /* GET users listing. */
-router.get("/:id", async function (req, res, next) {
-  info = req.params.id;
+router.get("/:userName", async function (req, res, next) {
+  info = req.params.userName;
+  console.log(info);
   try {
-    newUser = await user.findOne({ id: info });
+    newUser = await user.findOne({ userName: info });
     res.render("userPage", {
-      name: newUser.name,
+      userName: newUser.userName,
       img: newUser.titlePhoto,
-      id: newUser.id,
       des: newUser.description,
       bigPhoto: newUser.bigPhoto,
     });

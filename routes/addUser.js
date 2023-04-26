@@ -11,9 +11,10 @@ router.get("/", function (req, res, next) {
 
 router.post("/Upload", upload.none(), (req, res) => {
   data = req.body;
+  console.log(data);
   let newUser = new user({
-    id: data.id,
-    name: data.name,
+    userName: data.userName,
+    password: data.password,
     age: data.age,
     titlePhoto: data.titlePhoto,
     description: data.description,
@@ -23,13 +24,15 @@ router.post("/Upload", upload.none(), (req, res) => {
     .save()
     .then(() => {
       console.log("success");
-      res.render("addUser.hbs");
-      res.redirect(`/userPage/${data.id}`);
+      res.redirect(`/userPage/${data.userName}`);
     })
     .catch((err) => {
       console.log(err);
-      res.send(500, "id already used");
+      res.send(500, "Username Already Used");
     });
 });
-
+router.post("/login", upload.none(), (req, res) => {
+  data = req.body;
+  res.redirect(`/userPage/${data.userName}`);
+});
 module.exports = router;

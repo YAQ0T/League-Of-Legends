@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const properties = require("./properties");
 const URL = properties.URL;
+
 const { Schema } = mongoose;
 
 mongoose.connect(URL);
@@ -9,13 +10,13 @@ mongoose.connection.on("connected", () => {
 });
 
 let userSchema = new Schema({
-  id: { type: Number, required: true, unique: true },
+  userName: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
 
-  name: { type: String },
-  age: { type: Number },
-  titlePhoto: { type: String },
-  description: { type: String },
-  bigPhoto: { type: String },
+  age: { type: Number, required: true },
+  titlePhoto: { type: String, required: true },
+  description: { type: String, required: true },
+  bigPhoto: { type: String, required: true },
 });
 
 let user = mongoose.model("user", userSchema);

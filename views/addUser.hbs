@@ -7,30 +7,47 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>YAQOT Site welcomes you</h1>
     <dev class="main">
+      <div class="create">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <p>User Name:</p>
+          <input type="text" id="userName" name="userName" />
 
-      <form action="/upload" method="POST" enctype="multipart/form-data">
-        <p>Name:</p>
-        <input type="text" id="name" name="name" />
+          <p>Password:</p>
+          <input type="password" id="password" name="password" />
 
-        <p>ID:</p>
-        <input type="number" id="id" name="id" />
+          <p>Age:</p>
+          <input type="number" id="age" name="age" />
 
-        <p>Age:</p>
-        <input type="number" id="age" name="age" />
+          <p>Description:</p>
+          <textarea id="description" name="description"></textarea>
 
-        <p>Description:</p>
-        <input type="text" id="description" name="description"></textarea>
+          <p>Link For User Image:</p>
+          <input type="text" id="titlePhoto" name="titlePhoto" />
 
-        <p>Link For User Image:</p>
-        <input type="text" id="titlePhoto" name="titlePhoto" />
+          <p>
+            Link For Big Image:</p>
+          <input type="text" id="bigPhoto" name="bigPhoto" />
 
-        <p>
-          Link For Big Image:</p>
-        <input type="text" id="bigPhoto" name="bigPhoto" />
+          <input class="submit" type="submit" value="Sign Up" />
+        </form>
+      </div>
+      <div class="or">|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br
+        /><br />OR<br /><br />|<br />|<br />|<br />|<br />|<br />|<br />|<br
+        />|<br />|<br /></div>
+      <div class="login">
+        <form action="/login" method="POST" enctype="multipart/form-data">
+          <div class="inside">
+            <p>User Name:</p>
+            <input type="text" id="userName" name="userName" />
+            <p>Password:</p>
+            <input type="password" id="name" name="name" />
+            <input class="submit" type="submit" value="Log In" />
+          </div>
 
-        <input class="submit" type="submit" value="Upload" />
-      </form>
+        </form>
+      </div>
     </dev>
   </body>
 </html>
