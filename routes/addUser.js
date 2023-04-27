@@ -15,7 +15,12 @@ router.post("/Upload", upload.none(), (req, res) => {
   let newUser = new user({
     userName: data.userName,
     password: data.password,
-    age: data.age,
+    nickName: data.nickName,
+    gender: data.gender,
+    from: data.from,
+    email: data.email,
+    // games: data.games,
+    birthday: data.birthday,
     titlePhoto: data.titlePhoto,
     description: data.description,
     bigPhoto: data.bigPhoto,

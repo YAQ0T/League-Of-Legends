@@ -11,14 +11,24 @@ const user = require("../mongo");
 /* GET users listing. */
 router.get("/:userName", async function (req, res, next) {
   info = req.params.userName;
-  console.log(info);
   try {
     newUser = await user.findOne({ userName: info });
+    console.log(newUser.gender);
+
     res.render("userPage", {
       userName: newUser.userName,
+      nickName: newUser.nickName,
+      gender: newUser.gender,
+      from: newUser.from,
+      lang: newUser.lang,
+      email: newUser.email,
+      games: newUser.games,
+
       img: newUser.titlePhoto,
       des: newUser.description,
       bigPhoto: newUser.bigPhoto,
+      birthday: newUser.birthday,
+      id: newUser._id,
     });
   } catch (err) {
     console.error(err);

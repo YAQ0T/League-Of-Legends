@@ -1,33 +1,72 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheets/userPage.css">
-  <title>Document</title>
-</head>
-<body>
-  
-<dev class="mainBar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/userPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<h1>Welcome to YAQOT Server</h1>
-<dev class = "hello">
-  <dev class="info">
-  <h2>Hello {{name}}</h2>
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://rare-gallery.com/uploads/posts/895404-League-of-Legends-Legend-of-Runeterra-PC-gaming-fantasy.jpg"
+      alt="https://rare-gallery.com/uploads/posts/895404-League-of-Legends-Legend-of-Runeterra-PC-gaming-fantasy.jpg"
+    />
+    <div class="main">
+      <div class="logo">
+        <img
+          src="https://i.ibb.co/S39R4j6/image-2023-04-27-024903791-removebg-preview.png"
+          alt="https://i.ibb.co/S39R4j6/image-2023-04-27-024903791-removebg-preview.png"
+        />
 
-            <h4>your ID is {{id}}</h4>
+      </div>
+      <div class="halfUp">
+        <div class="you">
+          <div class="pic"><img src="{{img}}" alt="{{img}}" /></div>
+          <div class="name">{{userName}}</div>
+        </div>
+        <div class="border">
+          <div class="urInfo">
+            <div class="nickName oU"><p>Name :</p><div
+                class="nickNameInside iU"
+              ><p>{{nickName}}</p></div></div>
+            <div class="id oU"><p>ID :</p><div class="idInside iU"><p
+                >{{id}}</p></div></div>
+            <div class="gender oU"><p>gender :</p><div
+                class="genderInside iU"
+              ><p>{{gender}}</p></div></div>
+            <div class="Age oU"><p>Birthday :</p><div class="Age iU"><p
+                >{{birthday}}</p></div></div>
+            <div class="from oU"><p>From :</p><div class="fromInside iU"><p
+                >{{from}}</p></div></div>
+            <div class="lang oU"><p>lang :</p><div class="langInside iU"><p
+                >{{lang}}</p></div></div>
+            <div class="email oU"><p>Email :</p><div class="emailInside iU"><p
+                >{{email}}</p></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="halfDown">
 
-  </dev>
+        <div class="leftGamesAbout">
+          <div class="games uD"><div class="iD"><p>My fav games:</p>
+              <p class="iID">{{games}}</p></div></div>
+          <div class="aboutMe uD">
 
-      <img src={{img}} alt=`img{{name}}`>
+            <div class="iD"><p>About me:</p><p class="iID">{{des}}</p></div>
 
+          </div>
+        </div>
+        <div class="bigPic">
+          <img src="{{bigPhoto}}" alt="{{bigPhoto}}" />
+        </div>
+      </div>
 
-</dev>
-</dev>
-<h3 class="des">{{des}}</h3>
-<img class="bigPhoto" src={{bigPhoto}} alt=`bigImg{{name}}`>
+    </div>
 
-
-</body>
+  </body>
 </html>

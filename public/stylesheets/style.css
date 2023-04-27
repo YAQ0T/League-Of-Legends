@@ -1,0 +1,41 @@
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 1vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.9;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: #c6206b;
+  color: white;
+}
+.fa-discord {
+  background: #2a3958;
+  color: white;
+}
+.logo {
+  display: grid;
+  height: 10vh;
+  justify-items: center;
+}
+.logo > img {
+  height: 10vh;
+  width: 20vw;
+  border-radius: 10px;
+  opacity: 0.6;
+  margin-top: 2vh;
+}

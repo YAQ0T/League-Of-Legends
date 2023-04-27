@@ -1,35 +1,149 @@
-body {
-  display: grid;
-  grid-template-rows: 1fr 1fr 0.2fr 1fr 2fr;
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: brown;
-  height: 100vh;
+* {
+  font-family: Cursive;
+  color: rgba(54, 49, 34);
 }
-.mainBar {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+
+body {
+  height: 100vh;
   width: 100vw;
 }
-.hello {
+.name {
+  display: grid;
+  color: rgba(54, 49, 34);
+  font-size: xx-large;
+  font-weight: 700;
+  border-radius: 15px;
+  align-items: center;
+}
+body > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px) brightness(80%);
+}
+body > .main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.halfUp {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 40vh;
+  width: 90vw;
+  margin-left: 1vw;
+  margin-top: 3vh;
+}
+.you {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.pic > img {
+  width: 17vw;
+  height: 17vw;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.you {
+  height: 23vw;
+}
+.name {
+  height: 10vh;
+  font-size: xx-large;
+  text-align: center;
+}
+.border {
+  display: grid;
+  background-color: rgba(197, 192, 178, 0.4);
+  font-size: large;
+  border-radius: 15px;
+  height: 40vh;
+  width: 55vw;
+  justify-content: center;
+  align-items: center;
+}
+.urInfo {
+  color: rgba(197, 192, 178);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 20vh;
+  width: 50vw;
+  height: 35vh;
+}
+.urInfo > .oU {
+  width: 28vw;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+.oU > p {
+  font-weight: 600;
+}
+.iU {
+  border-radius: 10px;
+  width: 15vw;
+}
+.iU > p {
+  margin-left: 0.5vw;
+}
+.iIU {
+  font-size: large;
+  font-weight: 700;
+  width: 1vw;
+}
+.halfDown {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin-top: 7vh;
+}
+.bigPic > img {
+  width: 50vw;
+  height: 35vh;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.leftGamesAbout {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 35vh;
+}
+
+.uD {
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 19vh;
+  margin-left: 5vw;
+}
+.games {
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 15vh;
+}
+.iD {
+  background-color: rgba(197, 192, 178, 0.4);
+  font-size: large;
+  border-radius: 15px;
   width: 30vw;
 }
-.hello > img {
-  width: 10vw;
-  height: 10vw;
-  border-radius: 50%;
+.iD > p {
+  margin-left: 0.5vw;
+  font-weight: 600;
 }
-a {
-  color: #00b7ff;
-}
-.des {
-  height: 20vh;
-  width: 90vw;
-}
-.bigPhoto {
-  width: 70vw;
-  height: 50vh;
+.iD > .iID {
+  margin-left: 1vw;
+  font-weight: 400;
 }
