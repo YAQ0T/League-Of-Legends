@@ -12,32 +12,34 @@ router.get("/", function (req, res, next) {
 router.post("/Upload", upload.none(), (req, res) => {
   data = req.body;
   console.log(data);
-  let newUser = new user({
-    userName: data.userName,
-    password: data.password,
-    nickName: data.nickName,
-    gender: data.gender,
-    from: data.from,
-    email: data.email,
-    // games: data.games,
-    birthday: data.birthday,
-    titlePhoto: data.titlePhoto,
-    description: data.description,
-    bigPhoto: data.bigPhoto,
-  });
-  newUser
-    .save()
-    .then(() => {
-      console.log("success");
-      res.redirect(`/userPage/${data.userName}`);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.send(500, "Username Already Used");
-    });
-});
-router.post("/login", upload.none(), (req, res) => {
-  data = req.body;
-  res.redirect(`/userPage/${data.userName}`);
+  // if (data.password != data.confirmPassword) {
+  //   res.send(400, "ur password doesn't match the confirm password");
+  // } else {
+  //   let newUser = new user({
+  //     userName: data.userName,
+  //     password: data.password,
+  //     confirmPassword: data.confirmPassword,
+
+  //     email: data.email,
+  //     games: data.games,
+  //     lang: data.lang,
+  //     titlePhoto: data.titlePhoto,
+  //     description: data.description,
+  //     bigPhoto: data.bigPhoto,
+  //   });
+  //   newUser
+  //     .save()
+  //     .then(() => {
+  //       console.log("success");
+  //       res.redirect(`/userPage/${data.userName}`);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       res.send(
+  //         400,
+  //         "Bad Request ('maybe you didn't fill all the data correctly')"
+  //       );
+  //     });
+  // }
 });
 module.exports = router;

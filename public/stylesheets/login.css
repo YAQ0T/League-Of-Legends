@@ -1,0 +1,90 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  font-size: large;
+}
+input {
+  width: 18vw;
+  height: 4vh;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 7px;
+}
+.login {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.login > form {
+  display: grid;
+
+  width: 30vw;
+  height: 40vh;
+  font-size: large;
+  background-color: rgba(123, 232, 224, 1);
+  border-radius: 15px;
+  align-items: center;
+}
+.login > form > .inside {
+  grid-template-columns: 1fr;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+
+  height: 35vh;
+  align-items: center;
+  justify-items: center;
+}
+
+.login > form > .inside > p {
+  height: 0.1vh;
+  font-size: large;
+}
+#submit {
+  width: 10vw;
+}
+
+.inside > .submit {
+  margin-top: 5vh;
+}
+
+p {
+  font-size: 1vw;
+  margin-bottom: 3vh;
+}
+
+h1 {
+  font-size: 3vw;
+  margin-left: 0.5vw;
+  color: rgba(195, 196, 191);
+  margin-top: 4vh;
+}
+
+.main {
+  display: grid;
+  justify-items: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  grid-template-rows: 1fr 8fr;
+}
+.submit {
+  margin-top: 4vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 7px;
+  color: rgba(0, 0, 0);
+  width: 22vw;
+  border: none;
+  font-weight: 200;
+  font-size: x-large;
+}
+.submit:hover {
+  background-color: azure;
+  cursor: pointer;
+}
+.submit:hover {
+  cursor: pointer;
+}
