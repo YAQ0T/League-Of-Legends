@@ -7,143 +7,80 @@ body {
   height: 100vh;
   width: 100vw;
 }
-.name {
-  display: grid;
-  color: rgba(54, 49, 34);
-  font-size: xx-large;
-  font-weight: 700;
-  border-radius: 15px;
-  align-items: center;
-}
-body > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(3px) brightness(80%);
-}
-body > .main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.main {
-  display: grid;
-  grid-template-rows: 1fr 4fr 4fr 1fr;
-  height: 100vh;
-  width: 100vw;
-}
-
-.halfUp {
+.info {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 40vh;
-  width: 90vw;
-  margin-left: 1vw;
-  margin-top: 3vh;
+  height: 35vh;
+  margin-top: 2.5vw;
 }
-.you {
+.left {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
 }
-.pic > img {
+img {
+  height: 5vw;
+  width: 5vw;
+}
+.left > img {
+  border-radius: 50%;
   width: 17vw;
   height: 17vw;
-  border-radius: 50%;
-  opacity: 0.9;
 }
-.you {
-  height: 23vw;
+.left > h3 {
+  font-size: 30px;
 }
-.name {
-  height: 10vh;
-  font-size: xx-large;
-  text-align: center;
-}
-.border {
-  display: grid;
-  background-color: rgba(197, 192, 178, 0.4);
-  font-size: large;
+.infoCard {
+  width: 50vw;
+  height: 35vh;
+  background-color: rgba(123, 232, 224, 1);
   border-radius: 15px;
-  height: 40vh;
-  width: 55vw;
-  justify-content: center;
-  align-items: center;
 }
-.urInfo {
-  color: rgba(197, 192, 178);
+.infoCard {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 50vw;
-  height: 35vh;
 }
-.urInfo > .oU {
-  width: 28vw;
+.leftCard {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  align-items: center;
+  grid-template-columns: 1fr;
+  margin-left: 3vw;
+  margin-top: 2vw;
 }
-.oU > p {
-  font-weight: 600;
-}
-.iU {
-  border-radius: 10px;
-  width: 15vw;
-}
-.iU > p {
-  margin-left: 0.5vw;
-}
-.iIU {
-  font-size: large;
-  font-weight: 700;
-  width: 1vw;
-}
-.halfDown {
+.rightCard {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  margin-top: 7vh;
-}
-.bigPic > img {
-  width: 50vw;
-  height: 35vh;
-  border-radius: 10px;
-  opacity: 0.9;
-}
-.leftGamesAbout {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  height: 35vh;
-}
-
-.uD {
-  display: grid;
-  grid-template-rows: 1fr;
-  height: 19vh;
-  margin-left: 5vw;
+  grid-template-columns: 1fr;
+  margin-top: 2vw;
+  margin-left: 3vw;
 }
 .games {
   display: grid;
   grid-template-rows: 1fr;
-  height: 15vh;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.iD {
-  background-color: rgba(197, 192, 178, 0.4);
-  font-size: large;
+.lang {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.left > H3 {
+  text-align: center;
+}
+.description {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 6vh;
+}
+.bigPhoto {
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+}
+.bigPhoto > img {
+  height: 40vh;
+  width: 90vw;
   border-radius: 15px;
-  width: 30vw;
-}
-.iD > p {
-  margin-left: 0.5vw;
-  font-weight: 600;
-}
-.iD > .iID {
-  margin-left: 1vw;
-  font-weight: 400;
 }

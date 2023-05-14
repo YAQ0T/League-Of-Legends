@@ -3,70 +3,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/userPage.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <title>Document</title>
   </head>
   <body>
-    <img
-      src="https://rare-gallery.com/uploads/posts/895404-League-of-Legends-Legend-of-Runeterra-PC-gaming-fantasy.jpg"
-      alt="https://rare-gallery.com/uploads/posts/895404-League-of-Legends-Legend-of-Runeterra-PC-gaming-fantasy.jpg"
-    />
     <div class="main">
       <div class="logo">
         <img
+          class="img"
           src="https://i.ibb.co/S39R4j6/image-2023-04-27-024903791-removebg-preview.png"
           alt="https://i.ibb.co/S39R4j6/image-2023-04-27-024903791-removebg-preview.png"
         />
-
       </div>
-      <div class="halfUp">
-        <div class="you">
-          <div class="pic"><img src="{{img}}" alt="{{img}}" /></div>
-          <div class="name">{{userName}}</div>
-        </div>
-        <div class="border">
-          <div class="urInfo">
-            <div class="nickName oU"><p>Name :</p><div
-                class="nickNameInside iU"
-              ><p>{{nickName}}</p></div></div>
-            <div class="id oU"><p>ID :</p><div class="idInside iU"><p
-                >{{id}}</p></div></div>
-            <div class="gender oU"><p>gender :</p><div
-                class="genderInside iU"
-              ><p>{{gender}}</p></div></div>
-            <div class="Age oU"><p>Birthday :</p><div class="Age iU"><p
-                >{{birthday}}</p></div></div>
-            <div class="from oU"><p>From :</p><div class="fromInside iU"><p
-                >{{from}}</p></div></div>
-            <div class="lang oU"><p>lang :</p><div class="langInside iU"><p
-                >{{lang}}</p></div></div>
-            <div class="email oU"><p>Email :</p><div class="emailInside iU"><p
-                >{{email}}</p></div></div>
+      <div class="info">
+        <div class="left"><img
+            class="img"
+            src="{{titlePhoto}}"
+            alt="{{titlePhoto}}"
+          />
+          <h3>{{userName}}</h3></div>
+        <div class="infoCard">
+          <div class="leftCard">
+
+            <div class="email"><h2>Email:</h2><h3>{{email}}</h3></div>
+            <h2>Games:</h2>
+
+            <div class="games">
+
+              <img
+                class="img"
+                src="{{LeagueOfLegends}}"
+                alt="{{LeagueOfLegends}}"
+              /><img class="img" src="{{Valorant}}" alt="{{Valorant}}" />
+              <img class="img" src="{{TFT}}" alt="{{TFT}}" /></div>
+
+          </div>
+
+          <div class="rightCard">
+            <div class="id">
+              <h2>ID: </h2><h3>{{id}}</h3></div>
+            <h2>Languages:</h2>
+
+            <div class="lang">
+              <img class="img" src="{{Arabic}}" alt="{{Arabic}}" />
+              <img class="img" src="{{English}}" alt="{{English}}" />
+            </div>
           </div>
         </div>
       </div>
-      <div class="halfDown">
+      <div class="description"><h3>{{description}}</h3></div>
+      <div class="bigPhoto">
+        <img class="img" src="{{bigPhoto}}" alt="{{bigPhoto}}" />
 
-        <div class="leftGamesAbout">
-          <div class="games uD"><div class="iD"><p>My fav games:</p>
-              <p class="iID">{{games}}</p></div></div>
-          <div class="aboutMe uD">
-
-            <div class="iD"><p>About me:</p><p class="iID">{{des}}</p></div>
-
-          </div>
-        </div>
-        <div class="bigPic">
-          <img src="{{bigPhoto}}" alt="{{bigPhoto}}" />
-        </div>
       </div>
-
     </div>
-
   </body>
+  <script src="/javascripts/userPage.js"></script>
 </html>
